@@ -13,7 +13,7 @@ if __name__ == "__main__":
 	import matplotlib.pyplot as plt
 	import pandas as pd
 	
-	ts = pd.Series(autoregressive_process(100,0,0.5,0.8,1), index=pd.date_range('1/1/2000', periods=100))
+	ts = pd.Series(moving_average(100,0,0.5,0.8), index=pd.date_range('1/1/2000', periods=100))
 	
 	ts.plot()
 	
